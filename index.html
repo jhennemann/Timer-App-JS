@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Study Timer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="gridContainer">
+    <div id="timerTypes">
+      <button class="timeButton" id="regularTimer" onclick="regularTimer()">Countdown</button>
+      <button class="timeButton" id="pomoTimer" onclick="pomoTimer()">Pomodoro</button>
+      <button class="timeButton" id="stopwatch" onclick="stopwatch()">Stopwatch</button>
+    </div>
+    <div id="timeBox">
+    <h1 id="timerText">Study Timer</h1>
+    <p id="pomoText" style="display: none;">Study</p>
+    <h2 id="timer"><span id="delHours"><span id="hoursOut">00</span><span id="col">:</span></span><span id="mins">00</span><span id="col">:</span><span id="secs">00</span></h2>
+    <div id="inputs">
+  </div>
+    <button id="startPauseBtn">Start</button>
+    <button id="swStart" style="display: none;" onclick="swStart()">Start</button>
+    <button id="resetBtn" >Reset</button>
+    <button id="skipBtn" onclick="skip()" style="display: none;">➤</button>
+  </div>
+  <div id="addTime">
+    <h3>Hours</h3>
+    <button class="increaseTime" id="addHour" onclick="addTime(0, 1)">+ 1 hour</button>
+    <h3>Minutes</h3>
+    <button class="increaseTime" id="addMin" onclick="addTime(1, 1)">+ 1 Minute</button>
+    <button class="increaseTime" id="addTen" onclick="addTime(1, 10)">+ 10 Minutes</button>
+    <button class="increaseTime" id="addThiMin" onclick="addTime(1, 30)">+ 30 Minutes</button>
+  </div>
+  <div id="pomoRoute" style="display: none;">
+    <h2>Pomodoro Cycle</h2>
+    <p>Work (25 Minutes)</p>
+    <p>Short Break (5 Minutes)</p>
+    <p>Work (25 Minutes)</p>
+    <p>Short Break (5 Minutes)</p>
+    <p>Work (25 Minutes)</p>
+    <p>Short Break (5 Minutes)</p>
+    <p>Work (25 Minutes)</p>
+    <p>Long Break (30 Minutes)</p>
+  </div>
+</div>
+    </body>
+  <script src="timer_script.js"></script>
+</html>

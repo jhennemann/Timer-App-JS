@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
+
 }
 
 
@@ -10,7 +12,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   color: gray; /* White text color */
   background-color: #EAE7DC; /* Dark grey background */
-
+  max-width: 100%;
 }
 
 

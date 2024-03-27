@@ -27,6 +27,12 @@ startPauseBtn.addEventListener("click", startBtnCommands);
 resetBtn.addEventListener("click", resetCommands);
 const startPauseBtnText = document.querySelector("#startPauseBtn");
 
+$(document).on("keydown", function (e) {
+  if (e.key === " " || e.key === "Spacebar") {
+    startBtnCommands();
+  }
+});
+
 function startBtnCommands() {
   if (mode == "timer") {
     startPauseVal = !startPauseVal;

@@ -101,6 +101,14 @@ function startTimer() {
       checkPomoCycle(pomoCycle);
       minText.textContent = minutes;
       resetCommands();
+
+      if (mode == "timer") {
+        document.getElementById("addTime").style.display = "block";
+        document.getElementById("timerTypes").style.display = "inline";
+      } else if (mode == "pomo") {
+        document.getElementById("timerTypes").style.display = "inline";
+        document.getElementById("pomoRoute").style.display = "inline";
+      }
       return;
     }
 

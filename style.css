@@ -3,23 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 100%;
-
 }
 
-html{
-  max-width: 100%;
-}
 body {
   font-family: 'Quicksand', sans-serif;
-  color: gray; /* White text color */
-  background-color: #EAE7DC; /* Dark grey background */
-  max-width: 100%;
-}
-
-
-button{
-  font-family: 'Rakkas', sans-serif;
+  color: gray;
+  background-color: #EAE7DC;
 }
 
 .gridContainer {
@@ -29,10 +18,9 @@ button{
   justify-items: center;
   align-items: center;
   height: 100vh;
-  background-color: #EAE7DC; /* Dark grey background */
+  background-color: #EAE7DC;
 }
 
-/* Timer types container */
 #timerTypes {
   display: flex;
   justify-content: center;
@@ -44,7 +32,7 @@ button{
   margin-top: 0;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #E98074; /* Red color for buttons */
+  background-color: #E98074;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -53,18 +41,18 @@ button{
 }
 
 .timeButton:hover {
-  background-color: #E85A4F; /* Darker red on hover */
+  background-color: #E85A4F;
 }
 
-/* Timer box */
 #timeBox {
   text-align: center;
   padding: 20px;
-  width: 500px;
-  background-color: rgb(79, 79, 79); /* Dark grey background */
+  width: 90%; /* Adjusted width for better responsiveness */
+  max-width: 500px; /* Added max-width to limit width on larger screens */
+  background-color: rgb(79, 79, 79);
   color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White shadow */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 #timerText {
@@ -81,7 +69,6 @@ button{
   margin-bottom: 20px;
 }
 
-/* Control buttons */
 #startPauseBtn,
 #resetBtn,
 #skipBtn,
@@ -89,7 +76,7 @@ button{
   margin-right: 10px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #E98074; /* Red color for buttons */
+  background-color: #E98074;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -100,10 +87,9 @@ button{
 #startPauseBtn:hover,
 #resetBtn:hover,
 #skipBtn:hover {
-  background-color: #E85A4F; /* Darker red on hover */
+  background-color: #E85A4F;
 }
 
-/* Additional time container */
 #addTime {
   text-align: center;
 }
@@ -112,7 +98,7 @@ button{
   margin: 5px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #E98074; /* Red color for additional time buttons */
+  background-color: #E98074;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -121,9 +107,8 @@ button{
 }
 
 .increaseTime:hover {
-  background-color: #E85A4F; /* Darker red on hover */
+  background-color: #E85A4F;
 }
-
 
 #pomoRoute {
   text-align: center;
@@ -144,7 +129,6 @@ button{
     padding: 8px 16px;
     font-size: 14px;
   }
-  
 
   #startPauseBtn,
   #resetBtn,

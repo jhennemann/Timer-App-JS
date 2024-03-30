@@ -7,7 +7,9 @@
 
 }
 
-
+html{
+  max-width: 100%;
+}
 body {
   font-family: 'Quicksand', sans-serif;
   color: gray; /* White text color */
